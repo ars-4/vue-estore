@@ -1,30 +1,28 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <NavBar/>
+
   <router-view/>
+
+  <br>
+  
+  <div class="footer">
+    <span>Copyright (c) All Rights Reserved 2023</span>
+  </div>
+
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
 
-nav {
-  padding: 30px;
-}
+import { Options, Vue } from 'vue-class-component';
+import { defineComponent } from 'vue';
+import NavBar from './components/NavBar.vue';
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+export default defineComponent({
+  
+  components: {
+    NavBar,
+  },
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+});
+
+</script>

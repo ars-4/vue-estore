@@ -1,18 +1,44 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    
+    <CarouselView/>
+
+    <!-- Featured -->
+    <FeaturedView/>
+
+    <!-- Latest -->
+    <LatestView/>
+
+    <!-- NewsLetter -->
+    <NewsLetter/>
+
   </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
-@Options({
+import { defineComponent } from 'vue';
+import CarouselView from '@/components/CarouselView.vue';
+import FeaturedView from '@/components/FeaturedView.vue';
+import LatestView from '@/components/LatestView.vue';
+import NewsLetter from '@/components/NewsLetter.vue';
+
+export default defineComponent({
+  name: 'HomeView',
+
   components: {
-    HelloWorld,
+    CarouselView,
+    FeaturedView,
+    LatestView,
+    NewsLetter,
   },
-})
-export default class HomeView extends Vue {}
+
+  methods: {
+    get_products() {
+      console.log('get_products');
+    }
+  }
+
+});
+
 </script>
