@@ -3,7 +3,7 @@
 
   <router-view/>
 
-  <br>
+  <br><br>
   
   <div class="footer">
     <span>Copyright (c) All Rights Reserved 2023</span>
