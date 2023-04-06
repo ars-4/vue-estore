@@ -4,7 +4,30 @@
 
 :root {
     --primary: #2c3e50;
-    --secondary: #42b983;
+    --secondary: #C4A484;
+}
+
+.btn-primary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: #fff;
+}
+.btn-primary:hover {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: #242424;
+}
+.btn-outline-primary {
+    color: var(--secondary);
+    border-color: var(--secondary);
+}
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+.text-primary {
+    color: var(--secondary) !important;
 }
 
 body {
@@ -59,7 +82,7 @@ nav {
 .featured {
     background-color: #f5f5f5;
     padding: 50px 0;
-    background-image: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/elastoplast.png');
+    background-image: url('../images/crossline-dots.png');
 }
 .featured h1 {
     text-align: center;
@@ -79,6 +102,8 @@ nav {
 .featured .card .card-header {
     font-weight: bold;
     font-size: 18px;
+    background-color: rgba(225, 180, 125, 0.5);
+
     text-align: center;
 }
 .featured .card img {
@@ -90,6 +115,9 @@ nav {
     text-align: center;
     position: relative;
 }
+.featured .card .card-body {
+    background-color: rgba(255, 255, 255, 0.4);
+}
 .featured .card .card-body .price .cut-through {
     color: red;
     position: absolute;
@@ -99,7 +127,7 @@ nav {
     z-index: 0;
 }
 .featured .card .card-body .price .real-through {
-    color: var(--secondary);
+    color: green;
     font-weight: bold;
     z-index:2;
 }
@@ -113,6 +141,49 @@ nav {
     border-top-left-radius: 100%;
     border-bottom-left-radius: 100%;
     color:#fff;
+}
+
+
+
+.latest {
+    text-align: center;
+    background-image: url('../images/spikes.png');
+}
+.latest .row {
+    margin-left:3%;
+    margin-right:3%;
+}
+.latest .row .card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: .5s;
+    background: none;
+}
+.latest #view_all {
+    width: 50%;
+}
+
+
+
+.newsletter {
+    margin-left: 3%;
+    margin-right: 3%;
+    background-image: url('../images/oriental-tiles.png');
+    padding: 60px;
+    color: var(--secondary);
+}
+.newsletter h1 {
+    font-weight: bold;
+    text-align: center;
+}
+.newsletter .row .card {
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: .5s;
+    background-color: rgba(225, 180, 125, 0.7);
 }
 
 
