@@ -20,12 +20,12 @@
               Men's Wear
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item" href="#">Unstitched</a></li>
-              <li><a class="dropdown-item" href="#">Stitched</a></li>
+              <li><a class="dropdown-item" href="/products?category=unstitched">Unstitched</a></li>
+              <li><a class="dropdown-item" href="/products?category=stitched">Stitched</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Modern Wear</a></li>
+              <li><a class="dropdown-item" href="/products?category=modern">Modern Wear</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -34,12 +34,12 @@
               Modern
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item" href="#">T-Shirts</a></li>
-              <li><a class="dropdown-item" href="#">Jeans</a></li>
+              <li><a class="dropdown-item" href="/products?category=t-shirts">T-Shirts</a></li>
+              <li><a class="dropdown-item" href="/products?category=jeans">Jeans</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">3 piece suit</a></li>
+              <li><a class="dropdown-item" href="/products?category=suits">3 piece suit</a></li>
             </ul>
           </li>
         </ul>

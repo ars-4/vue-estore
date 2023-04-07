@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+    #mountains,
+    #panorama {
+        width: 600px;
+        height: 400px;
+    }
+    </style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<br>
+<div id="mountains"></div>
+<script>
+pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama": "https://pannellum.org/images/alma.jpg",
+    "autoLoad":true,
+    "showControls":false,
+    "autoRotate": false
+});
+pannellum.viewer('mountains', {
+    "type": "equirectangular",
+    "panorama": "../static/images/digital_painting_ultra_realistic_mountains.jpg",
+    "autoLoad":true,
+    "showControls":false,
+});
+</script>
+
+</body>
+</html>
