@@ -7,7 +7,7 @@
 
             <div class="col-md-3" v-for="product in products" :key="product">
                 <br>
-                <div class="card" onclick="alert(product.name)">
+                <div class="card" @click="product_page(product.name)">
                     <img :src="product.image" alt="">
                     <div class="card-body">
                         <p>The fresh subtle mind with great technique</p>
@@ -21,7 +21,7 @@
         </div>
 
         <br>
-        <a href="#" id="view_all" class="btn btn-primary">View All</a>
+        <a href="/products" id="view_all" class="btn btn-primary">View All</a>
         <br>
         <br>
     </div>
@@ -77,6 +77,13 @@ export default defineComponent({
             },
         ]
     }},
+
+    methods: {
+        product_page(name){
+            this.$router.push(`/product/?product_name=${name}`)
+        }
+    }
+
 })
 
 </script>

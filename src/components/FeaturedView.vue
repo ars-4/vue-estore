@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-4">
-                <div class="card">
+                <div class="card" @click="product_page('Awesome')">
                     <div class="card-header">
                         <h2>Leather Jackets</h2>
                     </div>
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
+                <div class="card" @click="product_page('Awesome')">
                     <div class="card-header">
                         <h2>Three Piece Suits</h2>
                     </div>
@@ -47,7 +47,7 @@
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-4">
-                <div class="card">
+                <div class="card" @click="product_page('Awesome')">
                     <div class="card-header">
                         <h2>Unstitched 3 Piece</h2>
                     </div>
@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
+                <div class="card" @click="product_page('Awesome')">
                     <div class="card-header">
                         <h2>Black Leather Jacket</h2>
                     </div>
@@ -84,3 +84,19 @@
         </div>
 
 </div></template>
+
+
+<script>
+
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+    name: 'FeaturedView',
+    methods: {
+        product_page: function (name) {
+            this.$router.push(`/product/?product_name=${name}`)
+        }
+    }
+})
+
+</script>
