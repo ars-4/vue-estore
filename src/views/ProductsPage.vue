@@ -14,7 +14,7 @@
                     <p>{{ prod.price }}</p>
                     <button class="btn btn-primary" @click="product_page(prod.name)">View</button>
                     &nbsp;
-                    <button class="btn btn-primary">Add to cart</button>
+                    <button class="btn btn-primary" @click="$add_to_cart(prod.id, prod.name, prod.price)">Add to cart</button>
                 </div>
             </div>
         </div>
@@ -31,32 +31,38 @@ import { defineComponent } from 'vue';
 export default defineComponent({
     data(){return{
         products: [
-            {
+            {   
+                "id": 0,
                 "name": "Leather Jacket",
                 "price": 8000,
                 "image": "https://images.freeimages.com/variants/jFFn96boKUKE7jSrdVr4MWYh/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d"
             },
             {
+                "id": 1,
                 "name": "Leather Jacket",
                 "price": 8000,
                 "image": "https://images.freeimages.com/variants/jFFn96boKUKE7jSrdVr4MWYh/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d"
             },
             {
+                "id": 2,
                 "name": "Leather Jacket",
                 "price": 8000,
                 "image": "https://images.freeimages.com/variants/jFFn96boKUKE7jSrdVr4MWYh/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d"
             },
             {
+                "id": 3,
                 "name": "Leather Jacket",
                 "price": 8000,
                 "image": "https://images.freeimages.com/variants/jFFn96boKUKE7jSrdVr4MWYh/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d"
             },
             {
+                "id": 4,
                 "name": "Leather Jacket",
                 "price": 8000,
                 "image": "https://images.freeimages.com/variants/jFFn96boKUKE7jSrdVr4MWYh/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d"
             },
             {
+                "id": 5,
                 "name": "Leather Jacket",
                 "price": 8000,
                 "image": "https://images.freeimages.com/variants/jFFn96boKUKE7jSrdVr4MWYh/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d"
